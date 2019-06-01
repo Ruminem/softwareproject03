@@ -13,8 +13,11 @@
     tools:context=".LoginActivity">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- 승용이 노트북 주석 테스트 -->
     <!-- 홍정민 desktop git 테스트 -->
+=======
+>>>>>>> parent of db12825... 승용이 노트북 주석 추가 테스트
 =======
 >>>>>>> parent of db12825... 승용이 노트북 주석 추가 테스트
     <TextView
