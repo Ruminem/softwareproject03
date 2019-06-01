@@ -7,7 +7,11 @@ buildscript {
         jcenter()
     }
     dependencies {
+<<<<<<< HEAD
         classpath 'com.android.tools.build:gradle:3.4.1'
+=======
+        classpath 'com.android.tools.build:gradle:3.2.1'
+>>>>>>> parent of db12825... 승용이 노트북 주석 추가 테스트
         
 
         // NOTE: Do not place your application dependencies here; they belong

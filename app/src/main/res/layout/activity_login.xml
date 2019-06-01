@@ -12,8 +12,11 @@
     android:background="@drawable/background_image"
     tools:context=".LoginActivity">
 
+<<<<<<< HEAD
     <!-- 승용이 노트북 주석 테스트 -->
     <!-- 홍정민 desktop git 테스트 -->
+=======
+>>>>>>> parent of db12825... 승용이 노트북 주석 추가 테스트
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
