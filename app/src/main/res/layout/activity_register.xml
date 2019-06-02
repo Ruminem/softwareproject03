@@ -13,77 +13,44 @@
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
 
-        <EditText
-            android:id="@+id/idText"
-            android:layout_width="330dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:ems="10"
-            android:hint="아이디를 입력하세여"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/nameText"
-            android:layout_width="350dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:ems="10"
-            android:hint="닉네임을 적어라"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordText" />
-
-        <EditText
-            android:id="@+id/phoneNumberText"
-            android:layout_width="350dp"
+        <TextView
+            android:text="회원 구분"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:ems="10"
-            android:hint="휴대폰 번호를 적게나"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameText" />
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
 
+        <RadioGroup
+            android:id="@+id/selectRadio"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
 
-        <EditText
-            android:id="@+id/passwordText"
-            android:layout_width="350dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="비밀번호를 입력하세여"
-            android:inputType="textPassword"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idText" />
+            <RadioButton
+                android:id="@+id/ownerRadioButton"
+                android:layout_width="128dp"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:text="사업자" />
+
+            <RadioButton
+                android:id="@+id/userRadioButton"
+                android:layout_width="128dp"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:text="사용자" />
+        </RadioGroup>
 
         <Button
-            android:text="회원가입"
-            android:id="@+id/registerButton"
-            android:layout_width="350dp"
+            android:text="선택"
+            android:id="@+id/selectButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -96,6 +63,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/phoneNumberText" />
+
+
     </LinearLayout>
 
 </LinearLayout>

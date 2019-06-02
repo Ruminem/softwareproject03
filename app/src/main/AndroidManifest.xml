@@ -18,9 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SubMainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterOwnerActivity" />
+        <activity android:name=".RegisterUserActivity" />
     </application>
 
 </manifest>
