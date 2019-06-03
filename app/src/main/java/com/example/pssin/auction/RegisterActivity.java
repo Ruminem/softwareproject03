@@ -28,7 +28,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
         final RadioButton userRadioButton = (RadioButton) findViewById(R.id.userRadioButton);
         final RadioButton ownerRadioButton = (RadioButton) findViewById(R.id.ownerRadioButton);
         final Button selectButton = (Button) findViewById(R.id.selectButton);
