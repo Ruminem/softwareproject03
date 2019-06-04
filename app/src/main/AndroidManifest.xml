@@ -26,6 +26,7 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".RegisterOwnerActivity" />
         <activity android:name=".RegisterUserActivity" />
+        <activity android:name=".CategorymanagementActivity" />
     </application>
 
 </manifest>
