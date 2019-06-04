@@ -209,7 +209,10 @@ public class RegisterOwnerActivity extends AppCompatActivity {
                                     {
                                         //Toast.makeText(RegisterActivity.this, "이메일보내기실패", Toast.LENGTH_SHORT).show();
                                         AlertDialog.Builder builder = new AlertDialog.Builder(RegisterOwnerActivity.this);
-                                        Toast.makeText(RegisterOwnerActivity.this, "이메일을 성공적으로 보냈습니다", Toast.LENGTH_SHORT).show();
+                                        builder.setMessage("이메일보내는것을 실패했습니다.")
+                                                .setNegativeButton("다시 시도", null)
+                                                .create()
+                                                .show();
                                     }
                                 }
                                 catch(JSONException e)
@@ -231,7 +234,7 @@ public class RegisterOwnerActivity extends AppCompatActivity {
                     case R.id.emailAuth_btn : //다이얼로그 내의 인증번호 인증 버튼을 눌렀을 시
                         String email2 = emailText.getText().toString();
                         String user_answer = emailAuth_number.getText().toString();
-                      //  emailAuth_number.setText(email2); //이건 테스트할려고 버튼누를때마다 값머나오는지 확인할려고 쓴거임
+                        emailAuth_number.setText(email2); //이건 테스트할려고 버튼누를때마다 값머나오는지 확인할려고 쓴거임
                         if(user_answer.equals(authentication)){
                             Toast.makeText(RegisterOwnerActivity.this, "이메일 인증 성공", Toast.LENGTH_SHORT).show();
                             authDialog.cancel();//인증성공하면 다이얼로그창 닫기해준다^^
