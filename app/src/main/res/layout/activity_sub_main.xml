@@ -1,73 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="horizontal"
+    android:background="@drawable/back"
     tools:context=".SubMainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_image">
+    <Button
+        android:id="@+id/subCategoryButtonMotorCycle"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button1_selector"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+    <Button
+        android:id="@+id/subCategoryButtonCar"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button2_selector"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
 
-            <!-- 컴퓨터 이미지 버튼 ( 새로 만들어야댐 ) -->
-            <ImageButton
-                android:id="@+id/subCategoryButtonComputer"
-                android:layout_width="205dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/sub_main_button_computer" />
+    <Button
+        android:id="@+id/subCategoryButtonPhone"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
 
-            <!-- 자동차 이미지 버튼 ( 새로 만들어야댐 ) -->
-            <ImageButton
-                android:id="@+id/subCategoryButtonCar"
-                android:layout_width="205dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/sub_main_button_car" />
+    <Button
+        android:id="@+id/subCategoryButtonComputer"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button3_selector"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
 
-            <!-- 오토바이 이미지 버튼 ( 새로 만들어야댐 ) -->
-            <ImageButton
-                android:id="@+id/subCategoryButtonMotorCycle"
-                android:layout_width="205dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/sub_main_button_motorcycle" />
+    <Button
+        android:id="@+id/subCategoryButtonElectronics"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button4_selector"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+</android.support.constraint.ConstraintLayout>
 
-            <!-- 가전제품 이미지 버튼 ( 새로 만들어야댐 ) -->
-            <ImageButton
-                android:id="@+id/subCategoryButtonElectronics"
-                android:layout_width="205dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/sub_main_button_electronics" />
 
-            <!-- 휴대폰 이미지 버튼 ( 새로 만들어야댐 ) -->
-            <ImageButton
-                android:id="@+id/subCategoryButtonPhone"
-                android:layout_width="205dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/sub_main_button_phone" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>

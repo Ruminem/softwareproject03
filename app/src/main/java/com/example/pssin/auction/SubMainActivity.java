@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class SubMainActivity extends AppCompatActivity {
@@ -13,7 +14,7 @@ public class SubMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_main);
 
-        final ImageButton subcategoryMotorCycle = (ImageButton)findViewById(R.id.subCategoryButtonMotorCycle);
+        final Button subcategoryMotorCycle = (Button)findViewById(R.id.subCategoryButtonMotorCycle);
 
         subcategoryMotorCycle.setOnClickListener(new View.OnClickListener() {
             @Override
