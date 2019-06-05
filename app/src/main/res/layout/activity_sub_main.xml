@@ -6,10 +6,10 @@
     android:id="@+id/image11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/background_img4"
     tools:context=".SubMainActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/subCategoryButtonMotorCycle"
         android:layout_width="150dp"
         android:layout_height="110dp"
@@ -19,7 +19,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button1_selector"
+        app:srcCompat="@drawable/sub_main_button_motorcycle"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button2_selector"
+        android:background="@drawable/sub_main_button_car"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +61,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/sub_main_button_phone"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,7 +81,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button3_selector"
+        android:background="@drawable/sub_main_button_computer"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,7 +101,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button4_selector"
+        android:background="@drawable/sub_main_button_electronics"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,5 +111,3 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.189" />
 </android.support.constraint.ConstraintLayout>
-
-
