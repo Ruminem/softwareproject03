@@ -23,7 +23,11 @@ public class SubMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sub_main);
 
         final Button subcategoryMotorCycle = (Button)findViewById(R.id.subCategoryButtonMotorCycle);
+        final Intent MainIntent = getIntent();
 
+        Intent motorIntent = new Intent(SubMainActivity.this,SubCategoryMotorCycle.class);
+        motorIntent.putExtra("accountID", MainIntent.getStringExtra("accountID"));
+        SubMainActivity.this.startActivity(motorIntent);
         subcategoryMotorCycle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
