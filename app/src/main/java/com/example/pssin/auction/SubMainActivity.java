@@ -18,7 +18,10 @@ public class SubMainActivity extends AppCompatActivity {
         subcategoryMotorCycle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final Intent MainIntent = getIntent();
+
                 Intent motorIntent = new Intent(SubMainActivity.this,SubCategoryMotorCycle.class);
+                motorIntent.putExtra("accountID", MainIntent.getStringExtra("accountID"));
                 SubMainActivity.this.startActivity(motorIntent);
             }
         });

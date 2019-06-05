@@ -1,3 +1,9 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Auction</string>
+    <string name="text13">BID</string>
+    <string name="strLoginButton">Log In</string>
+    <string name="strRegisterButton">Sign Up</string>
+    <string name="loginID">ID</string>
+    <string name="loginPassword">Password</string>
+    <string name="checkBox">Remember login</string>
 </resources>

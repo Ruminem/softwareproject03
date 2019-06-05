@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class SubCategoryMotorCycle extends AppCompatActivity {
 
@@ -19,7 +18,9 @@ public class SubCategoryMotorCycle extends AppCompatActivity {
         salebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent saleIntent = new Intent(SubCategoryMotorCycle.this,NoticeBoard.class);
+                final Intent SubMainIntent = getIntent();
+                Intent saleIntent = new Intent(SubCategoryMotorCycle.this, WriteBoardActivity.class);
+                saleIntent.putExtra("accountID", SubMainIntent.getStringExtra("accountID"));
                 SubCategoryMotorCycle.this.startActivity(saleIntent);
             }
         });

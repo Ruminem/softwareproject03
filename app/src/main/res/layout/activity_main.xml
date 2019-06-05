@@ -4,53 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/background_img"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <!-- 주석 추가 테스트 -->
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_image">
+        android:gravity="center">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+        <!-- 수리 / 견적 이미지 버튼 -->
+        <ImageButton
+            android:id="@+id/categoryFixButton"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/main_button_fix" />
 
-            <!-- 수리 / 견적 이미지 버튼 -->
-            <ImageButton
-                android:id="@+id/categoryFixButton"
-                android:layout_width="205dp"
-                android:layout_height="106dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                app:srcCompat="@drawable/main_button_fix" />
+        <!-- 중고품 이미지 버튼 -->
+        <ImageButton
+            android:id="@+id/categoryUsedButton"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/main_button_garage_item" />
 
-            <!-- 중고품 이미지 버튼 -->
-            <ImageButton
-                android:id="@+id/categoryUsedButton"
-                android:layout_width="205dp"
-                android:layout_height="106dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                app:srcCompat="@drawable/main_button_used" />
-
-            <!-- 새제품 이미지 버튼 ( 새로 만들어야댐 ) -->
-            <ImageButton
-                android:id="@+id/categoryNewButton"
-                android:layout_width="205dp"
-                android:layout_height="106dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                app:srcCompat="@drawable/main_button_new" />
-        </LinearLayout>
+        <!-- 새제품 이미지 버튼 ( 새로 만들어야댐 ) -->
+        <ImageButton
+            android:id="@+id/categoryNewButton"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/main_button_new" />
     </LinearLayout>
-
-
 </LinearLayout>

@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Intent loginIntent = getIntent();
                 Intent fixIntent = new Intent(MainActivity.this, SubMainActivity.class);
+                fixIntent.putExtra("accountID", loginIntent.getStringExtra("accountID"));
                 MainActivity.this.startActivity(fixIntent);
             }
         });
