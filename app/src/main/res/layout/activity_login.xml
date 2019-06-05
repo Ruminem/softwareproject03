@@ -7,7 +7,7 @@
     android:paddingBottom="16dp"
     android:paddingTop="32dp"
     android:orientation="vertical"
-    android:background="@drawable/background_img"
+    android:background="@drawable/background_img4"
     tools:context=".LoginActivity">
 
     <LinearLayout
