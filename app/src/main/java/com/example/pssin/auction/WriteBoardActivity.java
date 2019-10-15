@@ -1,9 +1,6 @@
 package com.example.pssin.auction;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.RequiresPermission;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,9 +19,6 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
-import org.w3c.dom.Text;
-
-import static java.security.AccessController.getContext;
 
 public class WriteBoardActivity extends AppCompatActivity {
     String category = "";
@@ -147,7 +141,7 @@ public class WriteBoardActivity extends AppCompatActivity {
                             if(success) // 글쓰기 성공!
                             {
                                 Toast.makeText(WriteBoardActivity.this, tradeLocation, Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(WriteBoardActivity.this, SubCategoryMotorCycle.class);
+                                Intent intent = new Intent(WriteBoardActivity.this, SubMainActivity.class);
                                 intent.putExtra("accountID", id);
                                 WriteBoardActivity.this.startActivity(intent);
                             }
